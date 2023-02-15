@@ -3,10 +3,6 @@ name: workflow artefato
 on:
  push:
 
-env: 
-  Variavel_1: Fabio Sodre
-  Variavel_2: Cotia
-  
 jobs:
   checkout_code: 
     name: faz checkout do codigo
@@ -20,5 +16,5 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with:
-        name: ${{ vars.Fabio Sodre }}
+        name: ${{ vars.Fabio_Sodre }}
         path: .
